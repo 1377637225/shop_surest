@@ -92,7 +92,7 @@ class Order extends Model
     {
         $pids = $request->pids;
         $count = $request->count;
-        if( count($pids) !== count($pids) ) {
+        if( count($pids) !== count($count) ) {
             return false;
         }
         $count = array_map('intval',$count);
